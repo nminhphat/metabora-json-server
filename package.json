@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "npm run start-mock-server",
+    "start": "node server.js",
     "start-mock-server": "json-server --watch ./db_mock_data.json --port 3003 --host 0.0.0.0",
     "standardize-dbjson": "node ./identize_dbdata_arrays_objects.js"
   },
