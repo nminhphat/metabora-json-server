@@ -1,0 +1,14 @@
+{
+  "name": "metabora-pilot",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run start-mock-server",
+    "start-mock-server": "json-server --watch ./db_mock_data.json --port 3003 --host 0.0.0.0",
+    "standardize-dbjson": "node ./identize_dbdata_arrays_objects.js"
+  },
+  "dependencies": {
+    "json-server": "^0.17.1",
+    "uuid": "^9.0.0"
+  }
+}
